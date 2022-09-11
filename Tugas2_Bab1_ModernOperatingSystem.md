@@ -1436,8 +1436,8 @@ The system call (and the library procedure) return the number of bytes actually 
 <br>
 <br>
 
-<p aling="center"><img src="img/17.png"></p>
-<p aling="center"><b>Figure 1-17</b>. The 11 steps in making the system call read(fd, buffer, nbytes).</p>
+<p align="center"><img src="img/17.png"></p>
+<p align="center"><b>Figure 1-17</b>. The 11 steps in making the system call read(fd, buffer, nbytes).</p>
 
 sense that the instruction following it is taken from a distant location and the return address is saved on the stack for use later.
 
@@ -1481,8 +1481,8 @@ is the elapsed time. The parameters are explained in the text.</p>
 <br>
 <br>
 
-<p aling="center"><img src="img/19.png"></p>
-<p aling="center"><b>Figure 1-19</b>. A stripped-down shell. Throughout this book, TRUE is assumed to
+<p align="center"><img src="img/19.png"></p>
+<p align="center"><b>Figure 1-19</b>. A stripped-down shell. Throughout this book, TRUE is assumed to
 be defined as 1</p>
 
 <p> &nbsp &nbsp &nbsp In the most general case, execve has three parameters: the name of the file to be executed, a pointer to the argument array, and a pointer to the environment array. These will be described shortly. Various library routines, including execl, execv, execle, and execve, are provided to allow the parameters to be omitted or specified in various ways. Throughout this book we will use the name exec to represent the system call invoked by all of these.</p>
@@ -1494,7 +1494,7 @@ be defined as 1</p>
 <p> &nbsp &nbsp &nbsp used to copy <i>file1</i> to <i>file2</i>. After the shell has forked, the child process locates and executes the file <i>cp</i> and passes to it the names of the source and target files.</p>
 <br>
 
-<p aling="center">INTRODUCTION</P>
+<p align="center">INTRODUCTION</P>
 <br>
 
 <p> &nbsp &nbsp &nbsp The main program of <i>cp</i> (and main program of most other C programs) contains the declaration
