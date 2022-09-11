@@ -1469,8 +1469,8 @@ does, the compiled code increments the stack pointer exactly enough to remove th
 
 <p> &nbsp &nbsp &nbsp The first group of calls in Fig. 1-18 deals with process management. Fork is a good place to start the discussion. Fork is the only way to create a new process in POSIX. It creates an exact duplicate of the original process, including all the file descriptors, registers—everything. After the fork, the original process and the copy (the parent and child) go their separate ways. All the variables have identical values at the time of the fork, but since the parent’s data are copied to create the child, subsequent changes in one of them do not affect the other one. (The program text, which is unchangeable, is shared between parent and child.) The fork call returns a value, which is zero in the child and equal to the child’s __PID (Process IDentifier)__ in the parent. Using the returned PID, the two processes can see which one is the parent process and which one is the child process.
 
-<p aling="center"><img src="img/18.png"></p>
-<p aling="center"><b>Figure 1-18</b>. Some of the major POSIX system calls. The return code s is −1 if
+<p align="center"><img src="img/18.png"></p>
+<p align="center"><b>Figure 1-18</b>. Some of the major POSIX system calls. The return code s is −1 if
 an error has occurred. The return codes are as follows: pid is a process id, fd is a
 file descriptor, n is a byte count, position is an offset within the file, and seconds
 is the elapsed time. The parameters are explained in the text.</p>
@@ -1624,8 +1624,8 @@ parameter tells whether the file system is to be mounted read-write or read-only
 <br>
 <br>
 
-<p align="center>"><img src="img/22.png"></p>
-<p align="center>"><b>Figure 1-22</b>. (a) File system before the mount. (b) File system after the mount.</p>
+<p align="center"><img src="img/22.png"></p>
+<p align="center"><b>Figure 1-22</b>. (a) File system before the mount. (b) File system after the mount.</p>
 
 <p> &nbsp &nbsp &nbsp After the mount call, a file on drive 0 can be accessed by just using its path
 from the root directory or the working directory, without regard to which drive it is
