@@ -2110,13 +2110,7 @@ machine supports many virtual machines at the same time).</p>
 more operating systems at the same time, say Windows and Linux, because some
 of their favorite application packages run on one and some run on the other. This
 situation is illustrated in Fig. 1-29(a), where the term ‘‘virtual machine monitor’’
-has been renamed <b>type 1 hypervisor</b>, which is commonly used nowadays because</p>
-<br>
-
-<p align="center">OPERATING SYSTEM STRUCTURE </p>
-<br>
-
-<p>‘‘virtual machine monitor’’ requires more keystrokes than people are prepared to
+has been renamed <b>type 1 hypervisor</b>, which is commonly used nowadays because ‘‘virtual machine monitor’’ requires more keystrokes than people are prepared to
 put up with now. Note that many authors use the terms interchangeably though.</p>
 <br>
 <br>
@@ -2193,9 +2187,6 @@ JVM is a much simpler architecture to interpret.) Another advantage of using JVM
 is that if the interpreter is implemented properly, which is not completely trivial,
 incoming JVM programs can be checked for safety and then executed in a protected environment so they cannot steal data or do any damage.</p>
 <br>
-
-<p align="center">OPERATING SYSTEM STRUCTURE</p>
-<br>
 <br>
 
 ### 1.7.6 Exokernels
@@ -2245,10 +2236,6 @@ imperative languages with data types, variables, and control statements, for exa
 characters, and floating-point numbers. Composite data types can be constructed
 using arrays, structures, and unions. The control statements in C are similar to
 those in Java, including if, switch, for, and while statements. Functions and parameters are roughly the same in both languages.</p>
-<br>
-
-<p align="center"> INTRODUCTION </p>
-<br>
 
 <p> &nbsp &nbsp &nbsp One feature C has that Java and Python do not is explicit pointers. A pointer
 is a variable that points to (i.e., contains the address of) a variable or data structure.
@@ -2282,7 +2269,7 @@ in at an arbitrary moment is intolerable.</p>
 <br>
 <br>
 
-<h3>1.8.2 Header Files</h3>
+### 1.8.2 Header Files
 <br>
 <br>
 
@@ -2300,8 +2287,6 @@ programming practice is to name every constant except 0, 1, and −1, and someti
 <p> &nbsp &nbsp &nbsp #define max(a, b) (a > b ? a : b)</p>
 
 which allows the programmer to write
-
-<p align="center">THE WORLD ACCORDING TO C </p>
 
 <p> &nbsp &nbsp &nbsp i = max(j, k+1)</p>
 
@@ -2350,22 +2335,15 @@ pmake, etc.</i>) that reads the <i>Makefile</i>, which tells it which files are 
 which other files. What <i>make</i> does is see which object files are needed to build the
 operating system binary and for each one, check to see if any of the files it depends
 on (the code and headers) have been modified subsequent to the last time the object file was created. If so, that object file has to be recompiled. When <i>make</i> has
-determined which .<i>c</i> files have to recompiled, it then invokes the C compiler to</p>
-<br>
-
-<p align="center">INTRODUCTION </p>
-<br>
-
-recompile them, thus reducing the number of compilations to the bare minimum.
+determined which .<i>c</i> files have to recompiled, it then invokes the C compiler to recompile them, thus reducing the number of compilations to the bare minimum.
 In large projects, creating the <i>Makefile</i> is error prone, so there are tools that do it
-automatically.
+automatically.</p>
 
 <p> &nbsp &nbsp &nbsp Once all the .<i>o</i> files are ready, they are passed to a program called the <b>linker</b> to
 combine all of them into a single executable binary file. Any library functions called are also included at this point, interfunction references are resolved, and machine addresses are relocated as need be. When the linker is finished, the result is
 an executable program, traditionally called <i>a.out</i> on UNIX systems. The various
 components of this process are illustrated in Fig. 1-30 for a program with three C
 files and two header files. Although we have been discussing operating system development here, all of this applies to developing any large program.</p>
-
 <br>
 <br>
 
@@ -2374,37 +2352,28 @@ files and two header files. Although we have been discussing operating system de
 <br>
 <br>
 
-<h3>1.8.4 The Model of Run Time</h3>
+### 1.8.4 The Model of Run Time
 <br>
 <br>
 
 <p> &nbsp &nbsp &nbsp Once the operating system binary has been linked, the computer can be
 rebooted and the new operating system started. Once running, it may dynamically
-load pieces that were not statically included in the binary such as device drivers</p>
-<br>
-
-<p align="center"> THE WORLD ACCORDING TO C </p>
-<br>
-
-and file systems. At run time the operating system may consist of multiple segments, for the text (the program code), the data, and the stack. The text segment is
+load pieces that were not statically included in the binary such as device drivers and file systems. At run time the operating system may consist of multiple segments, for the text (the program code), the data, and the stack. The text segment is
 normally immutable, not changing during execution. The data segment starts out
 at a certain size and initialized with certain values, but it can change and grow as
 need be. The stack is initially empty but grows and shrinks as functions are called
 and returned from. Often the text segment is placed near the bottom of memory,
 the data segment just above it, with the ability to grow upward, and the stack segment at a high virtual address, with the ability to grow downward, but different
-systems work differently.
+systems work differently.</p>
 
 <p> &nbsp &nbsp &nbsp In all cases, the operating system code is directly executed by the hardware,
 with no interpreter and no just-in-time compilation, as is normal with Java.</p>
 
 <br>
 <br>
-<br>
 
 ## 1.9 RESEARCH ON OPERATING SYSTEMS
 <br>
-<br>
-
 <br>
 
 <p> &nbsp &nbsp &nbsp Computer science is a rapidly advancing field and it is hard to predict where it
@@ -2432,18 +2401,12 @@ and the graphical user interface at Stanford Research Institute in the late 1960
 Who knows what will come next?</p>
 
 <p> &nbsp &nbsp &nbsp In this section and in comparable sections throughout the book, we will take a
-brief look at some of the research in operating systems that has taken place during</p>
-<br>
-
-<p align="center"> INTRODUCTION </p>
-<br>
-
-the past 5 to 10 years, just to give a flavor of what might be on the horizon. This
+brief look at some of the research in operating systems that has taken place during the past 5 to 10 years, just to give a flavor of what might be on the horizon. This
 introduction is certainly not comprehensive. It is based largely on papers that have
 been published in the top research conferences because these ideas have at least
 survived a rigorous peer review process in order to get published. Note that in computer science—in contrast to other scientific fields—most research is published in
 conferences, not in journals. Most of the papers cited in the research sections were
-published by either ACM, the IEEE Computer Society, or USENIX and are available over the Internet to (student) members of these organizations. For more information about these organizations and their digital libraries, see
+published by either ACM, the IEEE Computer Society, or USENIX and are available over the Internet to (student) members of these organizations. For more information about these organizations and their digital libraries, see</p>
 
 <p> &nbsp &nbsp &nbsp ACM &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp http://www.acm.org</p>
 <p> &nbsp &nbsp &nbsp IEEE Computer Society &nbsp &nbsp &nbsp &nbsp &nbsp &nbsphttp://www.computer.org</p>
@@ -2465,23 +2428,15 @@ Ur et al., 2012), usage and performance monitoring (Harter et. al, 2012; and Rav
 
 <br>
 <br>
-<br>
 
 ## 1.10 OUTLINE OF THE REST OF THIS BOOK
 <br>
 <br>
 
-<br>
-
 <p> &nbsp &nbsp &nbsp We hav e now completed our introduction and bird’s-eye view of the operating
-system. It is time to get down to the details. As mentioned already, from the programmer’s point of view, the primary purpose of an operating system is to provide</p>
-<br>
-
-<p align="center">OUTLINE OF THE REST OF THIS BOOK </p>
-<br>
-
+system. It is time to get down to the details. As mentioned already, from the programmer’s point of view, the primary purpose of an operating system is to provide
 some key abstractions, the most important of which are processes and threads, address spaces, and files. Accordingly the next three chapters are devoted to these
-critical topics.
+critical topics.</p>
 
 <p> &nbsp &nbsp &nbsp Chapter 2 is about processes and threads. It discusses their properties and how
 they communicate with one another. It also gives a number of detailed examples
@@ -2511,15 +2466,11 @@ worms), protection mechanisms, and security models.</p>
 <p> &nbsp &nbsp &nbsp Next we have some case studies of real operating systems. These are UNIX,
 Linux, and Android (Chap. 10), and Windows 8 (Chap. 11). The text concludes
 with some wisdom and thoughts about operating system design in Chap. 12.</p>
-
-<br>
 <br>
 <br>
 
 ## 1.11 METRIC UNITS
 <br>
-<br>
-
 <br>
 
 <p> &nbsp &nbsp &nbsp To avoid any confusion, it is worth stating explicitly that in this book, as in
@@ -2529,12 +2480,8 @@ in Fig. 1-31. The prefixes are typically abbreviated by their first letters, wit
 units greater than 1 capitalized. Thus a 1-TB database occupies 1012 bytes of storage and a 100-psec (or 100-ps) clock ticks every 10−10 seconds. Since milli and
 micro both begin with the letter ‘‘m,’’ a choice had to be made. Normally, ‘‘m’’ is
 for milli and ‘‘<i>μ</i>’’ (the Greek letter mu) is for micro.</p>
-<br>
 
-<p align="center"> INTRODUCTION </p>
 <br>
-<br>
-
 <p align="center"> <img src="img/31.png"></p>
 
 <p align="center"><b>Figure 1-31</b>. The principal metric prefixes.</p>
@@ -2555,12 +2502,9 @@ for 103
 
 <br>
 <br>
-<br>
 
 ## 1.12 SUMMARY
 <br>
-<br>
-
 <br>
 
 <p> &nbsp &nbsp &nbsp Operating systems can be viewed from two viewpoints: resource managers and
@@ -2579,10 +2523,6 @@ processors, memories, and I/O devices. These parts are connected by buses.</p>
 <p> &nbsp &nbsp &nbsp The basic concepts on which all operating systems are built are processes,
 memory management, I/O management, the file system, and security. Each of these
 will be treated in a subsequent chapter.</p>
-<br>
-
-<p align="center"> SUMMARY </p>
-<br>
 
 <p> &nbsp &nbsp &nbsp The heart of any operating system is the set of system calls that it can handle.
 These tell what the operating system really does. For UNIX, we have looked at
@@ -2592,10 +2532,6 @@ group is for directory management. The fourth group contains miscellaneous calls
 <p> &nbsp &nbsp &nbsp Operating systems can be structured in several ways. The most common ones
 are as a monolithic system, a hierarchy of layers, microkernel, client-server, virtual
 machine, or exokernel.</p>
-<br>
-
-<p align="center"><b>PROBLEMS</b></p>
-<br>
 
 1. What are the two main functions of an operating system?
 
@@ -2631,10 +2567,6 @@ modes aids in designing an operating system.
 11. A 255-GB disk has 65,536 cylinders with 255 sectors per track and 512 bytes per sector. How many platters and heads does this disk have? Assuming an average cylinder
 seek time of 11 ms, average rotational delay of 7 msec and reading rate of 100 MB/sec,
 calculate the average time it will take to read 400 KB from one sector.
-<br>
-
-<p align="center"> INTRODUCTION </p>
-<br>
 
 12. Which of the following instructions should be allowed only in kernel mode?
 
@@ -2690,10 +2622,7 @@ call return any value in <i>count</i> other than <i>nbytes</i>? If so, why?
 9, 2, 6, 5, 3, 5. The following system calls are made:
 lseek(fd, 3, SEEK SET);
 read(fd, &buffer, 4);
-    <p align="center">PROBLEMS </p>
-
-    where the lseek call makes a seek to byte 3 of the file. What does <i>buffer</i> contain after
-    the read has completed?
+where the lseek call makes a seek to byte 3 of the file. What does <i>buffer</i> contain after the read has completed?
 
 24. Suppose that a 10-MB file is stored on a disk on the same track (track 50) in consecutive sectors. The disk arm is currently situated over track number 100. How long will
 it take to retrieve this file from the disk? Assume that it takes about 1 ms to move the
@@ -2745,9 +2674,7 @@ output, pipes, and background jobs.
 that you can safely crash and reboot, write a shell script that attempts to create an
 unlimited number of child processes and observe what happens. Before running the
 experiment, type sync to the shell to flush the file system buffers to disk to avoid
-    <p align="center"> INTRODUCTION </p>
-
-    ruining the file system. You can also do the experiment safely in a virtual machine.
+ruining the file system. You can also do the experiment safely in a virtual machine.
 <b>Note</b>: Do not try this on a shared system without first getting permission from the system administrator. The consequences will be instantly obvious so you are likely to be
 caught and sanctions may follow.
 
