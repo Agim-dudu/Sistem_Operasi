@@ -1436,8 +1436,8 @@ The system call (and the library procedure) return the number of bytes actually 
 <br>
 <br>
 
-<p aling="center"><img src="img/17.png"></p>
-<p aling="center"><b>Figure 1-17</b>. The 11 steps in making the system call read(fd, buffer, nbytes).</p>
+<p align="center"><img src="img/17.png"></p>
+<p align="center"><b>Figure 1-17</b>. The 11 steps in making the system call read(fd, buffer, nbytes).</p>
 
 sense that the instruction following it is taken from a distant location and the return address is saved on the stack for use later.
 
@@ -1469,8 +1469,8 @@ does, the compiled code increments the stack pointer exactly enough to remove th
 
 <p> &nbsp &nbsp &nbsp The first group of calls in Fig. 1-18 deals with process management. Fork is a good place to start the discussion. Fork is the only way to create a new process in POSIX. It creates an exact duplicate of the original process, including all the file descriptors, registers—everything. After the fork, the original process and the copy (the parent and child) go their separate ways. All the variables have identical values at the time of the fork, but since the parent’s data are copied to create the child, subsequent changes in one of them do not affect the other one. (The program text, which is unchangeable, is shared between parent and child.) The fork call returns a value, which is zero in the child and equal to the child’s __PID (Process IDentifier)__ in the parent. Using the returned PID, the two processes can see which one is the parent process and which one is the child process.
 
-<p aling="center"><img src="img/18.png"></p>
-<p aling="center"><b>Figure 1-18</b>. Some of the major POSIX system calls. The return code s is −1 if
+<p align="center"><img src="img/18.png"></p>
+<p align="center"><b>Figure 1-18</b>. Some of the major POSIX system calls. The return code s is −1 if
 an error has occurred. The return codes are as follows: pid is a process id, fd is a
 file descriptor, n is a byte count, position is an offset within the file, and seconds
 is the elapsed time. The parameters are explained in the text.</p>
@@ -1481,8 +1481,8 @@ is the elapsed time. The parameters are explained in the text.</p>
 <br>
 <br>
 
-<p aling="center"><img src="img/19.png"></p>
-<p aling="center"><b>Figure 1-19</b>. A stripped-down shell. Throughout this book, TRUE is assumed to
+<p align="center"><img src="img/19.png"></p>
+<p align="center"><b>Figure 1-19</b>. A stripped-down shell. Throughout this book, TRUE is assumed to
 be defined as 1</p>
 
 <p> &nbsp &nbsp &nbsp In the most general case, execve has three parameters: the name of the file to be executed, a pointer to the argument array, and a pointer to the environment array. These will be described shortly. Various library routines, including execl, execv, execle, and execve, are provided to allow the parameters to be omitted or specified in various ways. Throughout this book we will use the name exec to represent the system call invoked by all of these.</p>
@@ -1494,7 +1494,7 @@ be defined as 1</p>
 <p> &nbsp &nbsp &nbsp used to copy <i>file1</i> to <i>file2</i>. After the shell has forked, the child process locates and executes the file <i>cp</i> and passes to it the names of the source and target files.</p>
 <br>
 
-<p aling="center">INTRODUCTION</P>
+<p align="center">INTRODUCTION</P>
 <br>
 
 <p> &nbsp &nbsp &nbsp The main program of <i>cp</i> (and main program of most other C programs) contains the declaration
@@ -1624,8 +1624,8 @@ parameter tells whether the file system is to be mounted read-write or read-only
 <br>
 <br>
 
-<p align="center>"><img src="img/22.png"></p>
-<p align="center>"><b>Figure 1-22</b>. (a) File system before the mount. (b) File system after the mount.</p>
+<p align="center"><img src="img/22.png"></p>
+<p align="center"><b>Figure 1-22</b>. (a) File system before the mount. (b) File system after the mount.</p>
 
 <p> &nbsp &nbsp &nbsp After the mount call, a file on drive 0 can be accessed by just using its path
 from the root directory or the working directory, without regard to which drive it is
