@@ -1,5 +1,45 @@
 <p><img src="img/Picture2.png" ></p>
 
+<p><img src="img/11.png" width="300"></p>
+
+Sebuah sistem operasi dapat dibagi menjadi beberapa komponen. Secara umum, para pakar sepakat bahwa terdapat sekurangnya empat komponen manajeman utama yaitu: 
+<p ><li align="justify">Manajemen Proses, 
+<p ><li align="justify">Manajemen Memori, dan 
+<p ><li align="justify">Manajamen Sistem Berkas. 
+<p ><li align="justify">Manajemen Masukan/Keluaran
+
+Selain keempat komponen di atas, Avi Silberschatz, dan kawan-kawan menambahkan beberapa komponen seperti: 
+<p ><li align="justify">Manajemen Penyimpanan Sekunder. 
+<p ><li align="justify">Manajemen Sistem Proteksi. 
+<p ><li align="justify">Manajemen Jaringan. 
+<p ><li align="justify">Command-Interpreter System. 
+
+<p align="center"><img src="img/15.png" width="300"></p>
+<p><img src="img/12.png" width="300"></p>
+<p><img src="img/13.png" width="300"></p>
+<p><img src="img/14.png" width="300"></p>
+
+<hr>
+<p><img src="img/19.png" width="300"></p>
+
+Layanan sistem operasi dirancang untuk membuat pemrograman menjadi lebih mudah.
+
+1. Pembuatan Program: Sistem operasi menyediakan berbagai fasilitas yang membantu programer dalam membuat program seperti editor. Walaupun bukan bagian dari sistem operasi, tapi layanan ini diakses melalui sistem operasi. 
+
+2. Eksekusi Program: Sistem harus bisa me-load program ke memori, dan menjalankan program tersebut. Program harus bisa menghentikan pengeksekusiannya baik secara normal maupun tidak (ada error). 
+
+3. Operasi Masukan/Keluaran. Program yang sedang dijalankan kadang kala membutuhkan Masukan/Keluaran. Untuk efisiensi dan keamanan, pengguna biasanya tidak bisa mengatur peranti Masukan/Keluaran secara langsung, untuk itulah sistem operasi harus menyediakan mekanisme dalam melakukan operasi Masukan/Keluaran. 
+
+4. Manipulasi Sistem Berkas. Program harus membaca dan menulis berkas, dan kadang kala juga harus membuat dan menghapus berkas. 
+Komunikasi. Kadang kala sebuah proses memerlukan informasi dari proses yang lain. Ada dua cara umum dimana komunikasi dapat dilakukan. 
+
+5. Komunikasi dapat terjadi antara proses dalam satu komputer, atau antara proses yang berada dalam komputer yang berbeda, tetapi dihubungkan oleh jaringan komputer. Komunikasi dapat dilakukan dengan share-memory atau message-passing, dimana sejumlah informasi dipindahkan antara proses oleh sistem operasi. 
+
+6. Deteksi Error. Sistem operasi harus selalu waspada terhadap kemungkinan error. Error dapat terjadi di CPU dan memori perangkat keras, Masukan/Keluaran, dan di dalam program yang dijalankan pengguna. Untuk setiap jenis error sistem operasi harus bisa mengambil langkah yang tepat untuk mempertahankan jalannya proses komputasi. Misalnya dengan menghentikan jalannya program, mencoba kembali melakukan operasi yang dijalankan, atau melaporkan kesalahan yang terjadi agar pengguna dapat mengambil langkah selanjutnya.
+
+<p align="center"><img src="img/16.png" width="300"></p>
+
+<hr>
 <p><img src="img/sistem.png" width="300"></p>
 
 <p align="justify"> &nbsp &nbsp Biasanya tersedia sebagai instruksi bahasa assembly. Beberapa sistem mengizinkan system calls dibuat langsung dari program bahasa tingkat tinggi. Beberapa bahasa pemrograman (contoh: C, C++) telah didefenisikan untuk menggantikan bahasa assembly untuk sistem pemrograman.</p>
