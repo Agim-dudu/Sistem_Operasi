@@ -1,26 +1,111 @@
-<p><img src="img/Picture2.png" ></p>
+<p><img src="img/Picture2.png"></p>
 
-<p><img src="img/11.png" width="300"></p>
+<p align="justify">Komponen Sistem Operasi
+Terdapat tiga elemen dasar yangmembangun   perancangan   sistem operasi secara umum. Komponen- komponen ini dapat disebut modular karena memiliki fungsi yang berbeda dan  dapat dikembangkan  secara terpisah. Ketiga bagian tersebut antara lain:
 
-Sebuah sistem operasi dapat dibagi menjadi beberapa komponen. Secara umum, para pakar sepakat bahwa terdapat sekurangnya empat komponen manajeman utama yaitu: 
-<p ><li align="justify">Manajemen Proses, 
-<p ><li align="justify">Manajemen Memori, dan 
-<p ><li align="justify">Manajamen Sistem Berkas. 
-<p ><li align="justify">Manajemen Masukan/Keluaran
+1. User Interface
+2. Kernel
+3. sistem manajemen file
 
-Selain keempat komponen di atas, Avi Silberschatz, dan kawan-kawan menambahkan beberapa komponen seperti: 
-<p ><li align="justify">Manajemen Penyimpanan Sekunder. 
-<p ><li align="justify">Manajemen Sistem Proteksi. 
-<p ><li align="justify">Manajemen Jaringan. 
-<p ><li align="justify">Command-Interpreter System. 
+<p align="justify">Pada kenyataannya tidak semua sistem operasi mempunyai struktur yang sama. Namun menurut Avi Silberschatz, Peter Galvin, dan Greg Gagne, umumnya sebuah sistem operasi modern mempunyai komponen sebagai berikut:
 
-<p align="center"><img src="img/15.png" width="300"></p>
+1. Managemen Proses.
+2. Managemen Memori Utama.
+3. Managemen Secondary-Storage.
+4. Managemen Sistem I/O.
+5. Managemen Berkas.
+6. Sistem Proteksi.
+7. Jaringan.
+8. Command-Interpreter system.
+
+<p align="justify">Dara pembagian diatas bisa saya jelaskan lebih lanjut melalui keterangan dibawah ini;
+
+<br>
 <p><img src="img/12.png" width="300"></p>
+
+<p align="justify">Proses adalah keadaan ketika sebuah program sedang di eksekusi. Sebuah proses membutuhkan beberapa sumber daya untuk menyelesaikan tugasnya. sumber daya tersebut dapat berupa CPU time, memori, berkas-berkas, dan perangkat-perangkat I/O.
+Sistem operasi bertanggung jawab atas aktivitas-aktivitas yang berkaitan dengan managemen proses seperti:
+
+1. Pembuatan dan penghapusan proses pengguna dan sistem proses.
+2. Menunda atau melanjutkan proses.
+3. Menyediakan mekanisme untuk proses sinkronisasi.
+4. Menyediakan mekanisme untuk proses komunikasi.
+5. Menyediakan mekanisme untuk penanganan deadlock.
+
+<br>
 <p><img src="img/13.png" width="300"></p>
+
+Memori utama atau lebih dikenal sebagai memori adalah sebuah array yang besar dari word atau byte, yang ukurannya mencapai ratusan, ribuan, atau bahkan jutaan. Setiap word atau byte mempunyai alamat tersendiri. Memori Utama berfungsi sebagai tempat penyimpanan yang akses datanya digunakan oleh CPU atau perangkat I/O. Memori utama termasuk tempat penyimpanan data yang sementara (volatile), artinya data dapat hilang begitu sistem dimatikan.
+
+Sistem operasi bertanggung jawab atas aktivitas-aktivitas yang berkaitan dengan managemen memori seperti:
+
+1. Menjaga track dari memori yang sedang digunakan dan siapa yang
+menggunakannya.
+2. Memilih program yang akan di-load ke memori.
+3. Mengalokasikan dan meng-dealokasikan ruang memori sesuai kebutuhan.
+
+<br>
+<p><img src="img/15.png" width="300"></p>
+
+Data yang disimpan dalam memori utama bersifat sementara dan jumlahnya sangat kecil. Oleh karena itu, untuk meyimpan keseluruhan data dan program computer dibutuhkan secondary-storage yang bersifat permanen dan mampu menampung banyak data. Contoh dari secondary-storage adalah harddisk, disket, dll.
+
+Sistem operasi bertanggung-jawab atas aktivitas-aktivitas yang berkaitan dengan disk-management seperti: 
+1. Manajemen ruang kosog
+2. alokasi penyimpanan.
+3. penjadualan disk.
+
+<br>
+<p><img src="img/16.png" width="300"></p>
+
+Sering disebut device manager. Menyediakan “device driver” yang umum sehingga operasi I/O dapat seragam (membuka, membaca, menulis, menutup). Contoh: pengguna menggunakan operasi yang sama untuk membaca berkas pada hard-disk, CD-ROM dan floppy disk.
+Komponen Sistem Operasi untuk sistem I/O:
+
+1. Buffer: menampung sementara data dari/ ke perangkat I/O.
+2. Spooling: melakukan penjadualan pemakaian I/O sistem supaya lebih efisien (antrian dsb.).
+3. Menyediakan driver untuk dapat melakukan operasi “rinci” untuk perangkat keras I/O tertentu.
+
+<br>
 <p><img src="img/14.png" width="300"></p>
 
-<hr>
+Berkas adalah kumpulan informasi yang berhubungan sesuai dengan tujuan pembuat berkas tersebut. Berkas dapat mempunyai struktur yang bersifat hirarkis (direktori, volume, dll.). Sistem operasi bertanggung-jawab:
+
+1. Pembuatan dan penghapusan berkas.
+2. Pembuatan dan penghapusan direktori.
+3. Mendukung manipulasi berkas dan direktori.
+4. Memetakan berkas ke secondary storage.
+5. Mem-backup berkas ke media penyimpanan yang permanen (non-volatile).
+
+<br>
+<p><img src="img/17.png" width="300"></p>
+
+Proteksi mengacu pada mekanisme untuk mengontrol akses yang dilakukan oleh program, prosesor, atau pengguna ke sistem sumber daya. Mekanisme proteksi harus:
+
+1. membedakan antara penggunaan yang sudah diberi izin dan yang belum.
+2. Spesifikasi kontrol untuk di terima.
+3. Menyediakan alat untuk pemberlakuan sistem.
+
+<br>
 <p><img src="img/19.png" width="300"></p>
+
+Sistem terdistribusi adalah sekumpulan prosesor yang tidak berbagi memori atau clock. Tiap prosesor mempunyai memori sendiri. Prosesor-prosesor tersebut terhubung melalui jaringan komunikasi Sistem terdistribusi menyediakan akses pengguna ke bermacam sumber-daya sistem. Akses tersebut menyebabkan:
+
+1. Peningkatan kecepatan komputasi.
+2. Peningkatan penyediaan data.
+3. Peningkatan keandalan.
+
+<br>
+<p><img src="img/20.png" width="300"></p>
+
+Sistem Operasi menunggu instruksi dari pengguna (command driven). Program yang membaca instruksi dan mengartikan control statements umumnya disebut: control-card interpreter, command-line interpreter, dan UNIX shell.
+Command-Interpreter System sangat bervariasi dari satu sistem operasi ke system operasi yang lain dan disesuaikan dengan tujuan dan teknologi I/O devices yang ada. Contohnya:
+
+1. CLI, 
+2. Windows, 
+3. Pen-based (touch), dan lain-lain.
+
+<br>
+<br>
+<p align="center"><img src="img/21.png" width="300"></p>
 
 Layanan sistem operasi dirancang untuk membuat pemrograman menjadi lebih mudah.
 
