@@ -3,9 +3,9 @@
 <p align="justify">Komponen Sistem Operasi
 Terdapat tiga elemen dasar yangmembangun   perancangan   sistem operasi secara umum. Komponen- komponen ini dapat disebut modular karena memiliki fungsi yang berbeda dan  dapat dikembangkan  secara terpisah. Ketiga bagian tersebut antara lain:
 
-1. User Interface
-2. Kernel
-3. sistem manajemen file
+1. User Interface.
+2. Kernel.
+3. sistem manajemen file.
 
 <p align="justify">Pada kenyataannya tidak semua sistem operasi mempunyai struktur yang sama. Namun menurut Avi Silberschatz, Peter Galvin, dan Greg Gagne, umumnya sebuah sistem operasi modern mempunyai komponen sebagai berikut:
 
