@@ -26,12 +26,38 @@ Terdapat tiga elemen dasar yangmembangun   perancangan   sistem operasi secara u
 <p align="justify"> &nbsp &nbsp &nbsp Proses adalah keadaan ketika sebuah program sedang di eksekusi. Sebuah proses membutuhkan beberapa sumber daya untuk menyelesaikan tugasnya. sumber daya tersebut dapat berupa CPU time, memori, berkas-berkas, dan perangkat-perangkat I/O.
 Sistem operasi bertanggung jawab atas aktivitas-aktivitas yang berkaitan dengan managemen proses seperti:
 
-1. Pembuatan dan penghapusan proses pengguna dan sistem proses.
-2. Menunda atau melanjutkan proses.
-3. Menyediakan mekanisme untuk proses sinkronisasi.
-4. Menyediakan mekanisme untuk proses komunikasi.
-5. Menyediakan mekanisme untuk penanganan deadlock.
+### 1. Pembuatan dan penghapusan proses pengguna dan sistem proses.
 
+<p>menghapus program yang sedang berjalan di laptop pada sistem operasi linux</p>
+
+<p align="center">
+masuk ke menu pencarian lalu tuliskan system monitor kemudian pilih<br><br><img src="img/1 (19).png" height="300"></p>
+
+<p align="center">
+maka akan muncul tampilan ini di sini kita bisa melihat program apa saja yg sedang berjalan di laptop kita untuk menghapus proses silahkan pilih program yg ingin di hapus lalu klik end task<br><br><img src="img/1 (20).png" height="300"></p>
+
+### 2. Menunda atau melanjutkan proses.
+contoh menunda dan melanjutkan proses download pada linux
+
+<p align="center">
+pada tampilan terlihat saya sedang mendownload klik kanan pada mouse lalu pilih pause maka proses mendownload akan di tunda <br><br><img src="img/1 (26).png" height="300"></p>
+
+<p align="center">
+dan jika ingin melanjutkan proses download maka klik kanan pada mouse lagi lalu pilih resume untuk melanjutkan proses downloadan tadi<br><br><img src="img/1 (26).png" height="300"></p>
+
+### 3. Menyediakan mekanisme untuk proses sinkronisasi.
+contoh proses sinkronisasi pada whatsapp yang ada di android dengan di laptop melalui whatsapp web di linux.
+
+<p align="center">
+pertama buka mozila firefox<br><br><img src="img/1 (21).png" height="300"></p>
+
+<p align="center">
+lalu klik kan di pencarian whatsapp web<br><br><img src="img/1 (16).png" height="300"></p>
+
+<p align="center">
+lalu singkronisasikan whatsapp yang ada di handphone dengan yang ada di laptop menggunkan QR CODE maka whatsappmu akan tersinkron dengan yang ada pada laptop<br><br><img src="img/1 (17).png" height="300"></p>
+
+<hr>
 <br>
 <p><img src="img/13.png" width="300"></p>
 
@@ -44,6 +70,8 @@ menggunakannya.
 2. Memilih program yang akan di-load ke memori.
 3. Mengalokasikan dan meng-dealokasikan ruang memori sesuai kebutuhan.
 
+<hr>
+
 <br>
 <p><img src="img/15.png" width="300"></p>
 
@@ -53,6 +81,8 @@ Sistem operasi bertanggung-jawab atas aktivitas-aktivitas yang berkaitan dengan 
 1. Manajemen ruang kosog
 2. alokasi penyimpanan.
 3. penjadualan disk.
+
+<hr>
 
 <br>
 <p><img src="img/16.png" width="300"></p>
@@ -64,17 +94,41 @@ Komponen Sistem Operasi untuk sistem I/O:
 2. Spooling: melakukan penjadualan pemakaian I/O sistem supaya lebih efisien (antrian dsb.).
 3. Menyediakan driver untuk dapat melakukan operasi “rinci” untuk perangkat keras I/O tertentu.
 
+<hr>
+
 <br>
 <p><img src="img/14.png" width="300"></p>
 
 <p align="justify"> &nbsp &nbsp &nbsp Berkas adalah kumpulan informasi yang berhubungan sesuai dengan tujuan pembuat berkas tersebut. Berkas dapat mempunyai struktur yang bersifat hirarkis (direktori, volume, dll.). Sistem operasi bertanggung-jawab:
 
-1. Pembuatan dan penghapusan berkas.
-2. Pembuatan dan penghapusan direktori.
-3. Mendukung manipulasi berkas dan direktori.
-4. Memetakan berkas ke secondary storage.
-5. Mem-backup berkas ke media penyimpanan yang permanen (non-volatile).
+### 1. Contoh pembuatan dan penghapusan berkas di linux.
 
+<p align="center">
+masuk kedalam terminal lalu tuliskan <b>touch nama_file.jinis_file</b> lalu enter<br><br><img src="img/1 (9).png" height="300"></p>
+
+<p align="center">
+maka file baru dengan nama yang kamu ingin buat tadi akan muncul jika ingin menghapus berkas atau file silahkan tekan tombol delete paa keyboard<br><br><img src="img/1 (10).png" height="300"></p>
+
+### 2. Contoh pembuatan dan penghapusan direktori di linux.
+
+<p align="center">
+klik tombol activities di pjok kiri atas<br><br><img src="img/1 (1).png" height="300"></p>
+
+<p align="center">pilih menu file<br><br><img src="img/1 (2).png" height="300"></p>
+
+<p align="center">kemudian disini saya ingin menambah direktori ke dalam folder document <br><br><img src="img/1 (3).png" height="300"></p>
+
+<p align="center">kemudian klik kanan pada mouse atau touch pad lalu pilih new folder<br><br><img src="img/1 (4).png" height="300"></p>
+
+<p align="center">masukkan nama direktori baru<br><br><img src="img/1 (5).png" height="300"></p>
+
+<p align="center">maka anda telah berhasil membuat sebuah directori baru jika ingin menghapusnya silahkan tekan delete pada keyboard<br><br><img src="img/1 (6).png" height="300"></p>
+
+### 3. contoh manipulasi berkas dan direktori di linux.
+
+<p align="center">pilih folder yang ingin di edit klik kanan pilih rename untuk mengganti atau memanipulasi nama folder tersebut<br><br><img src="img/1 (6).png" height="300"></p>
+
+<hr>
 <br>
 <p><img src="img/17.png" width="300"></p>
 
@@ -84,6 +138,7 @@ Proteksi mengacu pada mekanisme untuk mengontrol akses yang dilakukan oleh progr
 2. Spesifikasi kontrol untuk di terima.
 3. Menyediakan alat untuk pemberlakuan sistem.
 
+<hr>
 <br>
 <p><img src="img/19.png" width="300"></p>
 
@@ -92,6 +147,8 @@ Proteksi mengacu pada mekanisme untuk mengontrol akses yang dilakukan oleh progr
 1. Peningkatan kecepatan komputasi.
 2. Peningkatan penyediaan data.
 3. Peningkatan keandalan.
+
+<hr>
 
 <br>
 <p><img src="img/20.png" width="300"></p>
@@ -103,9 +160,10 @@ Command-Interpreter System sangat bervariasi dari satu sistem operasi ke system 
 2. Windows, 
 3. Pen-based (touch), dan lain-lain.
 
+<hr>
 <br>
 <p align="center"><img src="img/21.png" width="300"></p>
-
+ 
 Layanan sistem operasi dirancang untuk membuat pemrograman menjadi lebih mudah.
 
 1. Pembuatan Program: Sistem operasi menyediakan berbagai fasilitas yang membantu programer dalam membuat program seperti editor. Walaupun bukan bagian dari sistem operasi, tapi layanan ini diakses melalui sistem operasi. 
@@ -206,6 +264,9 @@ System program menyediakan lingkungan yang memungkinkan pengembangan program dan
 <p ><li align="justify">Beberapa system calls disediakan untuk membantu pertukaran informasi antara pengguna dan sistem operasi. Contohnya system calls untuk meminta dan mengatur waktu dan tanggal. Atau meminta informasi tentang sistem itu sendiri, seperti jumlah pengguna, jumlah memori dan disk yang masih bisa digunakan, dan lain-lain. Ada juga system calls untuk meminta informasi tentang proses yang disimpan oleh sistem dan system calls untuk merubah (reset) informasi tersebut.</p>
 
 <p align="justify"><li align="justify">Dalam message-passing, sebelum komunikasi dapat dilakukan harus dibangun dulu sebuah koneksi. Untuk itu diperlukan suatu system calls dalam pengaturan koneksi tersebut, baik dalam menghubungkan koneksi tersebut maupun dalam memutuskan koneksi tersebut ketika komunikasi sudah selesai dilakukan. Juga diperlukan suatu system calls untuk membaca dan menulis pesan (message) agar pertukaran informasi dapat dilakukan. </p>
+
+<br>
+<p align="center"><img src="img/10.png" width="350"></p>
 
 <br>
 <p><img src="img/penutup.png"></p>
